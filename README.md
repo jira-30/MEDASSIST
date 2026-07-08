@@ -1,6 +1,6 @@
 # MedAssist: Multimodal Clinical AI Assistant
 
-MedAssist is an interactive RAG-based application that helps doctors quickly understand a patient's medical history. Doctors can upload prescriptions, lab reports, and clinical notes — as PDFs, scanned images, text files, or tables — and MedAssist analyzes the full set of documents to generate a patient summary, surface a preliminary diagnosis suggestion through an interactive chatbot, and let doctors schedule a video call appointment directly with the patient.
+MedAssist is an interactive RAG-based application that helps doctors quickly understand a patient's medical history. Doctors can upload prescriptions, lab reports, and clinical notes as PDFs, scanned images, text files, or tables. MedAssist analyzes the full set of documents to generate a patient summary, surface a preliminary diagnosis suggestion through an interactive chatbot, and let doctors schedule a video call appointment directly with the patient.
 
 ## What It Does
 
@@ -15,12 +15,12 @@ MedAssist is an interactive RAG-based application that helps doctors quickly und
 
 MedAssist follows a Retrieval-Augmented Generation (RAG) pipeline purpose-built for multimodal clinical data:
 
-1. **Ingestion & OCR** — Prescriptions, scanned reports, and documents are parsed using OCR (Tesseract) and document parsers (pdfplumber, docx) to extract raw text from PDFs, images, and tables
-2. **Preprocessing** — Extracted text is cleaned and normalized using Regex-based pattern extraction to standardize clinical notes and diagnostic descriptions
-3. **Embedding** — Cleaned text is converted into dense semantic vectors using `SentenceTransformers (all-MiniLM-L6-v2)`
-4. **Retrieval** — FAISS performs fast nearest-neighbor search over the embedded patient records to retrieve the most relevant context for a query
-5. **Classification** — A Linear SVM (scikit-learn) classifies retrieved content to support diagnostic categorization
-6. **Generation** — Retrieved context is passed to the chatbot layer to generate the patient summary and diagnostic response
+1. **Ingestion & OCR**: Prescriptions, scanned reports, and documents are parsed using OCR (Tesseract) and document parsers (pdfplumber, docx) to extract raw text from PDFs, images, and tables
+2. **Preprocessing**: Extracted text is cleaned and normalized using Regex-based pattern extraction to standardize clinical notes and diagnostic descriptions
+3. **Embedding**: Cleaned text is converted into dense semantic vectors using `SentenceTransformers (all-MiniLM-L6-v2)`
+4. **Retrieval**: FAISS performs fast nearest-neighbor search over the embedded patient records to retrieve the most relevant context for a query
+5. **Classification**: A Linear SVM (scikit-learn) classifies retrieved content to support diagnostic categorization
+6. **Generation**: Retrieved context is passed to the chatbot layer to generate the patient summary and diagnostic response
 
 ## Results
 
