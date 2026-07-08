@@ -1,4 +1,4 @@
-# MedAssist — Multimodal Clinical AI Assistant
+# MedAssist: Multimodal Clinical AI Assistant
 
 MedAssist is an interactive RAG-based application that helps doctors quickly understand a patient's medical history. Doctors can upload prescriptions, lab reports, and clinical notes — as PDFs, scanned images, text files, or tables — and MedAssist analyzes the full set of documents to generate a patient summary, surface a preliminary diagnosis suggestion through an interactive chatbot, and let doctors schedule a video call appointment directly with the patient.
 
@@ -9,7 +9,7 @@ MedAssist is an interactive RAG-based application that helps doctors quickly und
 - **AI diagnostic assistant**: An interactive chatbot answers questions about the patient's condition and surfaces a preliminary diagnosis based on retrieved context
 - **Doctor-patient video consultation**: Doctors can initiate a video call appointment with the patient directly from the application
 
-> ⚠️ **Disclaimer**: MedAssist is a portfolio/research project and is not a certified medical device. Diagnostic suggestions are intended to support, not replace, clinical judgment.
+> **Disclaimer**: MedAssist is a portfolio/research project and is not a certified medical device. Diagnostic suggestions are intended to support, not replace, clinical judgment.
 
 ## How It Works
 
