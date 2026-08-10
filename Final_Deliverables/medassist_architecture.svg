@@ -1,0 +1,97 @@
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#475569" />
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="620" fill="#ffffff"/>
+  <text x="450" y="35" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">MedAssist — System Architecture</text>
+  <text x="450" y="56" text-anchor="middle" font-size="12" fill="#64748b">Multimodal clinical document analysis (RAG + FAISS)</text>
+
+  <!-- Frontend -->
+  <rect x="60" y="90" width="200" height="70" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="160" y="118" text-anchor="middle" font-size="14" font-weight="600" fill="#075985">Frontend</text>
+  <text x="160" y="136" text-anchor="middle" font-size="12" fill="#0369a1">React + Vite</text>
+  <text x="160" y="150" text-anchor="middle" font-size="11" fill="#0369a1">Document upload / chat UI</text>
+
+  <!-- Backend / API -->
+  <rect x="350" y="90" width="200" height="70" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="450" y="118" text-anchor="middle" font-size="14" font-weight="600" fill="#713f12">Backend API</text>
+  <text x="450" y="136" text-anchor="middle" font-size="12" fill="#854d0e">Orchestrates pipeline</text>
+  <text x="450" y="150" text-anchor="middle" font-size="11" fill="#854d0e">(request routing / auth)</text>
+
+  <!-- Supabase -->
+  <rect x="640" y="90" width="200" height="70" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="740" y="118" text-anchor="middle" font-size="14" font-weight="600" fill="#14532d">Supabase</text>
+  <text x="740" y="136" text-anchor="middle" font-size="12" fill="#15803d">Auth + storage</text>
+  <text x="740" y="150" text-anchor="middle" font-size="11" fill="#15803d">document + session metadata</text>
+
+  <!-- OCR -->
+  <rect x="60" y="240" width="200" height="70" rx="10" fill="#fae8ff" stroke="#a21caf" stroke-width="1.5"/>
+  <text x="160" y="268" text-anchor="middle" font-size="14" font-weight="600" fill="#701a75">OCR Layer</text>
+  <text x="160" y="286" text-anchor="middle" font-size="12" fill="#86198f">Tesseract OCR</text>
+  <text x="160" y="300" text-anchor="middle" font-size="11" fill="#86198f">extracts text from scans/images</text>
+
+  <!-- Embeddings -->
+  <rect x="350" y="240" width="200" height="70" rx="10" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+  <text x="450" y="268" text-anchor="middle" font-size="14" font-weight="600" fill="#7c2d12">Embeddings</text>
+  <text x="450" y="286" text-anchor="middle" font-size="12" fill="#9a3412">SentenceTransformers</text>
+  <text x="450" y="300" text-anchor="middle" font-size="11" fill="#9a3412">chunk + vectorize text</text>
+
+  <!-- FAISS -->
+  <rect x="640" y="240" width="200" height="70" rx="10" fill="#e0e7ff" stroke="#4338ca" stroke-width="1.5"/>
+  <text x="740" y="268" text-anchor="middle" font-size="14" font-weight="600" fill="#312e81">Vector Store</text>
+  <text x="740" y="286" text-anchor="middle" font-size="12" fill="#3730a3">FAISS</text>
+  <text x="740" y="300" text-anchor="middle" font-size="11" fill="#3730a3">similarity search / retrieval</text>
+
+  <!-- Classifier -->
+  <rect x="60" y="390" width="200" height="70" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="160" y="418" text-anchor="middle" font-size="14" font-weight="600" fill="#7f1d1d">Classification</text>
+  <text x="160" y="436" text-anchor="middle" font-size="12" fill="#991b1b">Linear SVM</text>
+  <text x="160" y="450" text-anchor="middle" font-size="11" fill="#991b1b">document type / triage label</text>
+
+  <!-- RAG generation -->
+  <rect x="350" y="390" width="200" height="70" rx="10" fill="#cffafe" stroke="#0891b2" stroke-width="1.5"/>
+  <text x="450" y="418" text-anchor="middle" font-size="14" font-weight="600" fill="#164e63">RAG Generation</text>
+  <text x="450" y="436" text-anchor="middle" font-size="12" fill="#155e75">retrieved context + query</text>
+  <text x="450" y="450" text-anchor="middle" font-size="11" fill="#155e75">→ LLM response</text>
+
+  <!-- Response -->
+  <rect x="640" y="390" width="200" height="70" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="740" y="418" text-anchor="middle" font-size="14" font-weight="600" fill="#075985">Response</text>
+  <text x="740" y="436" text-anchor="middle" font-size="12" fill="#0369a1">back to frontend UI</text>
+  <text x="740" y="450" text-anchor="middle" font-size="11" fill="#0369a1">summary / answer / label</text>
+
+  <!-- Arrows: row 1 -->
+  <line x1="260" y1="125" x2="350" y2="125" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="550" y1="125" x2="640" y2="125" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Backend down to OCR/Embeddings -->
+  <line x1="450" y1="160" x2="450" y2="240" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="380" y1="200" x2="160" y2="240" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- OCR -> Embeddings -->
+  <line x1="260" y1="275" x2="350" y2="275" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- Embeddings -> FAISS -->
+  <line x1="550" y1="275" x2="640" y2="275" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Embeddings -> Classifier -->
+  <line x1="420" y1="310" x2="200" y2="390" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- FAISS -> RAG Generation -->
+  <line x1="700" y1="310" x2="500" y2="390" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- Classifier -> RAG Generation -->
+  <line x1="260" y1="425" x2="350" y2="425" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- RAG Generation -> Response -->
+  <line x1="550" y1="425" x2="640" y2="425" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Supabase side connections -->
+  <line x1="740" y1="160" x2="740" y2="240" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4" marker-end="url(#arrow)"/>
+  <line x1="740" y1="310" x2="740" y2="390" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4" marker-end="url(#arrow)"/>
+
+  <text x="450" y="500" text-anchor="middle" font-size="11" fill="#94a3b8">Dashed lines = Supabase storage/session calls (async, cross-cutting)</text>
+
+  <rect x="60" y="530" width="780" height="60" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="450" y="552" text-anchor="middle" font-size="12" fill="#475569" font-weight="600">Flow: Upload (React) → OCR (Tesseract) → Embed (SentenceTransformers) → Retrieve (FAISS)</text>
+  <text x="450" y="572" text-anchor="middle" font-size="12" fill="#475569">→ Classify (SVM) + Generate (RAG/LLM) → Response back to UI, all backed by Supabase</text>
+</svg>
