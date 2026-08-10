@@ -62,7 +62,7 @@ npm run dev
 ```
 
 ## Architecture
-![MedAssist Architecture](Final_Deliverables/architecture.svg)
+![MedAssist Architecture](Final_Deliverables/medassist_architecture.svg)
 
 ## Roadmap
 
