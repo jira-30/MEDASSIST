@@ -62,8 +62,7 @@ npm run dev
 ```
 
 ## Architecture
-
-*A full architecture diagram covering the ingestion, embedding, retrieval, and generation pipelines is in progress and will be added here.*
+![MedAssist Architecture](Final_Deliverables/architecture.svg)
 
 ## Roadmap
 
