@@ -1,6 +1,12 @@
 # MedAssist: Multimodal Clinical AI Assistant
 
-*Author*: 
+**Author**: Raghav Krishnamurthy, Shruthi Ravi
+
+**Data**: Patients Prescriptions in different file formats (View the Data folder)
+
+**Framework**: Retrieval Augmented Generation (RAG) and Natural Language Processing (NLP)
+
+**Objective**: A software that can interact with both patients and doctors to provide a better health care companion by 
 
 MedAssist is an interactive RAG-based application that helps doctors quickly understand a patient's medical history. Doctors can upload prescriptions, lab reports, and clinical notes as PDFs, scanned images, text files, or tables. MedAssist analyzes the full set of documents to generate a patient summary, surface a preliminary diagnosis suggestion through an interactive chatbot, and let doctors schedule a video call appointment directly with the patient.
 
