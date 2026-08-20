@@ -30,6 +30,21 @@ MedAssist follows a Retrieval-Augmented Generation (RAG) pipeline purpose-built 
 5. **Classification**: A Linear SVM (scikit-learn) classifies retrieved content to support diagnostic categorization
 6. **Generation**: Retrieved context is passed to the chatbot layer to generate the patient summary and diagnostic response
 
+## Tech Stack
+
+| Category | Tools |
+|---|---|
+| Language | Python |
+| Data handling | Pandas, NumPy |
+| Text preprocessing | Regex (re), PDF/Text/Document parsers (pdfplumber, docx), OCR (Tesseract) |
+| Embeddings | SentenceTransformers (all-MiniLM-L6-v2), PyTorch |
+| Retrieval | FAISS (Facebook AI Similarity Search) |
+| Classification | Scikit-learn (Linear SVM) |
+| Visualization | Matplotlib, Seaborn |
+| Backend / Database | Supabase |
+| Frontend | Vite, TypeScript, React, shadcn-ui, Tailwind CSS |
+
+
 ## Project Structure
 ```
 medassist/
@@ -109,29 +124,6 @@ medassist/
     └── medassist_architecture.svg
 ```
 
-## Results 
-
-Initial model evaluation on a small validation set:
-
-- **Accuracy: 87.5%**
-- Strong precision/recall (1.00) on several diagnostic classes; one underrepresented class currently scores 0, highlighting a target area for more training data going forward
-
-*Note: this evaluation set is small (8 samples total). Expanding the labeled dataset is a next step to validate these results at scale.*
-
-## Tech Stack
-
-| Category | Tools |
-|---|---|
-| Language | Python |
-| Data handling | Pandas, NumPy |
-| Text preprocessing | Regex (re), PDF/Text/Document parsers (pdfplumber, docx), OCR (Tesseract) |
-| Embeddings | SentenceTransformers (all-MiniLM-L6-v2), PyTorch |
-| Retrieval | FAISS (Facebook AI Similarity Search) |
-| Classification | Scikit-learn (Linear SVM) |
-| Visualization | Matplotlib, Seaborn |
-| Backend / Database | Supabase |
-| Frontend | Vite, TypeScript, React, shadcn-ui, Tailwind CSS |
-
 ## Setup
 
 ```sh
@@ -147,8 +139,18 @@ npm install
 # Start the development server
 npm run dev
 ```
-
 ## Architecture
 ![MedAssist Architecture](Final_Deliverables/medassist_architecture.svg)
+
+## Results 
+
+Initial model evaluation on a small validation set:
+
+- **Accuracy: 87.5%**
+- Strong precision/recall (1.00) on several diagnostic classes; one underrepresented class currently scores 0, highlighting a target area for more training data going forward
+
+*Note: this evaluation set is small (8 samples total). Expanding the labeled dataset is a next step to validate these results at scale.*
+
+
 
 
