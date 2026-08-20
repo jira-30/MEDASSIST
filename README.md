@@ -132,6 +132,7 @@ git clone <YOUR_GIT_URL>
 
 # Navigate to the project directory
 cd rag_med
+cd Application_Code
 
 # Install dependencies
 npm install
