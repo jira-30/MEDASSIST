@@ -157,7 +157,9 @@ npm run dev
 ![MedAssist Output1](Final_Deliverables/Medassist_features.png)
 
 #### d) This module is developed for doctor and patient interactions, for emergency and critical diagnosis.
+
 (Note: We need professional supervision and direction for AI to be used effectively for diagnosing the patients through their medical condition despite AI being the cornerstone of information)
+
 ![MedAssist Output1](Final_Deliverables/Medassist_interaction_module.png)
 
 #### f) General Forecasts and medical check reports for each and every patient.
@@ -171,6 +173,8 @@ Initial model evaluation on a small validation set:
 - Strong precision/recall (1.00) on several diagnostic classes; one underrepresented class currently scores 0, highlighting a target area for more training data going forward
 
 *Note: this evaluation set is small (8 samples total). Expanding the labeled dataset is a next step to validate these results at scale.*
+
+## 
 
 
 
