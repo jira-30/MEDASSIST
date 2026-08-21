@@ -143,6 +143,8 @@ npm run dev
 ## Architecture
 ![MedAssist Architecture](Final_Deliverables/medassist_architecture.svg)
 
+## Outputs
+
 ## Results 
 
 Initial model evaluation on a small validation set:
