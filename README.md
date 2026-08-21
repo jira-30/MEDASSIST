@@ -145,7 +145,7 @@ npm run dev
 ```
 
 ## Outputs
-
+![MedAssist Output1](Final_Deliverables/)
 ## Results 
 
 Initial model evaluation on a small validation set:
