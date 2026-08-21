@@ -30,6 +30,9 @@ MedAssist follows a Retrieval-Augmented Generation (RAG) pipeline purpose-built 
 5. **Classification**: A Linear SVM (scikit-learn) classifies retrieved content to support diagnostic categorization
 6. **Generation**: Retrieved context is passed to the chatbot layer to generate the patient summary and diagnostic response
 
+## Architecture
+![MedAssist Architecture](Final_Deliverables/medassist_architecture.svg)
+
 ## Tech Stack
 
 | Category | Tools |
@@ -140,8 +143,6 @@ npm install
 # Start the development server
 npm run dev
 ```
-## Architecture
-![MedAssist Architecture](Final_Deliverables/medassist_architecture.svg)
 
 ## Outputs
 
