@@ -145,7 +145,13 @@ npm run dev
 ```
 
 ## Outputs
-![MedAssist Output1](Final_Deliverables/)
+![MedAssist Output1](Final_Deliverables/Medassist_intro.png)
+![MedAssist Output1](Final_Deliverables/Medassist_intro2.png)
+![MedAssist Output1](Final_Deliverables/Medassist_AIRAG.png)
+![MedAssist Output1](Final_Deliverables/Medassist_features.png)
+![MedAssist Output1](Final_Deliverables/Medassist_interaction_module.png)
+![MedAssist Output1](Final_Deliverables/Medassist_patientforecast.png)
+
 ## Results 
 
 Initial model evaluation on a small validation set:
