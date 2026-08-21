@@ -145,11 +145,22 @@ npm run dev
 ```
 
 ## Outputs
+#### a) The Webpage includes the portnumber and general outlook for any user before uploading the documents
 ![MedAssist Output1](Final_Deliverables/Medassist_intro.png)
+
+#### b) After Uploading the documents, status of each process applied on that particular document can be monitored by the user. To the right side of the page, the user can view the summerized report and an interaction chat box for user's communication with AI assistant 
 ![MedAssist Output1](Final_Deliverables/Medassist_intro2.png)
+
 ![MedAssist Output1](Final_Deliverables/Medassist_AIRAG.png)
+
+#### c) Other features for the user to explore through the webpage.
 ![MedAssist Output1](Final_Deliverables/Medassist_features.png)
+
+#### d) This module is developed for doctor and patient interactions, for emergency and critical diagnosis.
+(Note: We need professional supervision and direction for AI to be used effectively for diagnosing the patients through their medical condition despite AI being the cornerstone of information)
 ![MedAssist Output1](Final_Deliverables/Medassist_interaction_module.png)
+
+#### f) General Forecasts and medical check reports for each and every patient.
 ![MedAssist Output1](Final_Deliverables/Medassist_patientforecast.png)
 
 ## Results 
